@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera.any"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VenmaMainProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".AllScreenFirstPage"
+            android:exported="true"
+            android:label="@string/title_activity_all_screen_first_page"
+            android:theme="@style/Theme.VenmaMainProject" />
+        <activity
+            android:name=".BottomBarActivity"
+            android:exported="false"
+            android:label="@string/title_activity_bottom_bar"
+            android:theme="@style/Theme.VenmaMainProject" />
+        <activity
+            android:name=".FirstScreenSS"
+            android:exported="false"
+            android:label="@string/title_activity_first_screen_ss"
+            android:theme="@style/Theme.VenmaMainProject" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.VenmaMainProject" />
+        <activity
+            android:name=".firstScreenActivity"
+            android:exported="false"
+            android:label="@string/title_activity_first_screen"
+            android:theme="@style/Theme.VenmaMainProject" />
+        <activity
+            android:name=".ChatDetailContacts"
+            android:exported="false"
+            android:label="@string/title_activity_chat_detail_contacts"
+            android:theme="@style/Theme.VenmaMainProject" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.VenmaMainProject">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <provider
+            android:authorities="${applicationId}.provider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/path_provider"
+                />
+
+        </provider>
+
+        
+    </application>
+
+</manifest>

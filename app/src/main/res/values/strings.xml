@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VenmaMainProject</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_chat_detail_contacts">ChatDetailContacts</string>
+    <string name="title_activity_first_screen">firstScreenActivity</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_first_screen_ss">FirstScreenSS</string>
+    <string name="title_activity_bottom_bar">BottomBarActivity</string>
+    <string name="title_activity_all_screen_first_page">AllScreenFirstPage</string>
+</resources>
